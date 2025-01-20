@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #F4C2B3;
+}
+
+#divContainer {
+    border: solid 1px antiquewhite;
+    text-align: center;
+    margin:  10vh 30% 0 30%;
+    padding: 50px 10px; 
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow:  5px 5px 15px black;
+    
+    #tempBox {
+        border: none;
+        width: 125px;
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    #tempSubmit,#tempReset {
+        border: none;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #tempSubmit:hover,#tempReset:hover {
+        background-color:darkgrey;
+    }
+
+    #ctf, #ftc{
+        cursor: pointer;
+        accent-color: rgba(42, 39, 39, 0.995);
+    }
+
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* For Tablets and Smaller Screens */
+@media screen and (max-width: 768px) {
+    /* Adjust container width and margin */
+    #divContainer {
+        margin: 10vh 10%; /* Reduced margin for smaller screens */
+        width: 80%; /* Adjust container width */
+    }
+
+    /* Adjust input fields */
+    #tempBox {
+        width: 100%;  /* Make the input box responsive */
+        max-width: 250px; /* Limit the width on larger screens */
+        height: 40px;
+    }
+
+    /* Adjust buttons */
+    #tempSubmit, #tempReset {
+        width: 100%;  /* Make buttons full-width */
+        max-width: 250px;
+        height: 45px;
+    }
+
+    /* Adjust the heading size */
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* For Mobile Devices (below 480px) */
+@media screen and (max-width: 480px) {
+    /* Further adjust container for mobile */
+    #divContainer {
+        margin: 10vh 5%; /* Smaller margin for mobile */
+        width: 90%; /* Full-width container on mobile */
+    }
+
+    /* Adjust input field width and height */
+    #tempBox {
+        width: 100%;
+        max-width: 220px;
+        height: 45px;
+    }
+
+    /* Adjust button size */
+    #tempSubmit, #tempReset {
+        width: 100%;
+        max-width: 220px;
+        height: 50px; /* Increase button size for easy tap */
+    }
+
+    /* Further adjust heading size */
+    h1 {
+        font-size: 1.5rem;
+    }
+}

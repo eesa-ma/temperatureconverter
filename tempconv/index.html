@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature converter</title>
+    <link rel="stylesheet" href="/self/javascript/tempconv/style.css">
+</head>
+<body>
+    <div id="divContainer">
+        <h1 id="headLine">Temperature Conversion</h1>
+        <input type="number" name="tempBox" id="tempBox" min="0" max="100" step="5"> <br> <br>
+        <input type="radio" name="conv" id="ctf" value="ctf"> 
+        <label for="ctf">Celsius -> Fahrenheit</label> <br> <br>
+        <input type="radio" name="conv" id="ftc" value="ftc">
+        <label for="ftc">Fahrenheit -> Celsius</label> <br><br>
+        <input type="submit" name="tempSubmit" id="tempSubmit" onclick="convert()"> 
+        <input type="reset" name="tempReset" id="tempReset" onclick="resetForm()"> <br><br>
+        <p id="result"></p>
+    </div>
+    <script src="/self/javascript/tempconv/script.js"></script>
+</body>
+</html> 
